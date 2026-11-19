@@ -2,18 +2,20 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="refresh" content="0; url=https://lorena-soria.pages.dev/">
+<script>window.location.replace("https://lorena-soria.pages.dev/" + window.location.search + window.location.hash);</script>
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f8f0e8">
 <meta name="description" content="Lorena Soria · Asesoría financiera patrimonial. Los grandes proyectos se construyen paso a paso.">
 <meta property="og:title" content="Lorena Soria · Asesoría financiera patrimonial">
 <meta property="og:description" content="Los grandes proyectos se construyen paso a paso. Contacto y asesoría financiera patrimonial.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://fervmtrabado-source.github.io/Tarjetas-digitales/lorena_portada.jpg">
+<meta property="og:image" content="https://lorena-soria.pages.dev/lorena_portada.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://fervmtrabado-source.github.io/Tarjetas-digitales/lorena_soria.html">
-<meta property="og:url" content="https://fervmtrabado-source.github.io/Tarjetas-digitales/lorena_soria.html">
+<link rel="canonical" href="https://lorena-soria.pages.dev/">
+<meta property="og:url" content="https://lorena-soria.pages.dev/">
 <title>Lorena Soria · Tarjeta digital</title>
 <style>
 :root{--wine:#751830;--wine2:#4b1025;--red:#c13b38;--cream:#fcf7f1;--ink:#2d2929;--gold:#d7aa79}
@@ -149,7 +151,7 @@ front.addEventListener('keydown',e=>{if(e.target===front && ['Enter',' '].includ
 flipBack.addEventListener('click',()=>turn(false));
 function notify(message){toast.textContent=message;toast.classList.add('visible');clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>toast.classList.remove('visible'),2300)}
 document.getElementById('shareBtn').addEventListener('click',async()=>{
- const data={title:'Lorena Soria · Asesoría Financiera Patrimonial',text:'Los grandes proyectos se construyen paso a paso.',url:'https://fervmtrabado-source.github.io/Tarjetas-digitales/lorena_soria.html'};
+ const data={title:'Lorena Soria · Asesoría Financiera Patrimonial',text:'Los grandes proyectos se construyen paso a paso.',url:'https://lorena-soria.pages.dev/'};
  try {if(navigator.share){await navigator.share(data);return}} catch(e){if(e.name==='AbortError')return}
  try {await navigator.clipboard.writeText(data.url);notify('Enlace copiado ✓')}
  catch(e){const input=document.createElement('input');input.value=data.url;document.body.appendChild(input);input.select();try{document.execCommand('copy');notify('Enlace copiado ✓')}catch(err){window.prompt('Copia el enlace',data.url)}input.remove()}
